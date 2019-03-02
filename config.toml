@@ -1,3 +1,62 @@
-baseURL = "http://example.org/"
-languageCode = "en-us"
-title = "My New Hugo Site"
+baseURL = "https://metrics.inuits.dev"
+theme = ["metrics", "dot"]
+
+
+[params]
+primaryColor = "#02007e"
+secondaryColor = "#f9f9f9"
+textColor = "#636363"
+textColorDark = "#242738"
+whiteColor = "#ffffff"
+
+[Languages]
+
+  [Languages.en]
+  languageName = "En"
+  weight = 1
+  languageCode = "en-us"
+  title = "Metrics"
+  dateFormat = "2 January 2006"
+  home = "Home"
+  logo = "Metrics"
+  copyright = 'This work is licensed under a Creative Commons Attribution 4.0 International License.'
+
+    # navigation
+    [Languages.en.menu]
+    
+      [[Languages.en.menu.main]]
+        weight = 2
+        name = "github"
+        url = "https://github.com/inuits/metrics"
+
+
+    # banner
+    [Languages.en.params.banner]
+      title = "Metrics Monitoring Resources & Knowledge base"
+      description = "Find advice and answers from the community"
+      image = "images/banner.jpg"
+      placeholder = "Have a question? Just ask here or enter terms"
+
+    # Topics
+    [Languages.en.params.topics]
+      title = "Find your answer by subject"
+    
+    # call to action
+    [Languages.en.params.cta]
+      enable = true
+      title = "Didn't find an answer to your question? Have more information?"
+      description = "We are an open community. We take pull requests."
+      btnText = "contact us"
+      btnURL = "https://github.com/inuits/metrics"
+
+    # contact
+    [Languages.en.params.contact]
+      title = "Got Any Questions"
+      content = "Submit the form and confirm your email address at <a class='text-primary' href='https://formspree.io/'>Formspree</a> Then add the following lines to contact page YAML Front Matter."
+
+    # footer social icon
+    [[Languages.en.socialIcon]]
+      icon = "ti-github"
+      URL = "https://github.com/inuits/metrics"
+
+
